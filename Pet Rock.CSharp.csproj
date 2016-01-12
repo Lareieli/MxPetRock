@@ -65,20 +65,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GravityAttractor.cs" />
-    <Compile Include="Assets\Scripts\GravityBody.cs" />
+    <Compile Include="Assets\GroupCaller.cs" />
     <Compile Include="Assets\Scripts\GroundSwitcher.cs" />
+    <Compile Include="Assets\Scripts\GroupSwitcher.cs" />
     <Compile Include="Assets\Scripts\MaterialSwitcher.cs" />
-    <Compile Include="Assets\Scripts\RockSwitcher.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\Scripts\ShapeSwitcher.cs" />
     <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\SuperSwitchLeft.cs" />
     <Compile Include="Assets\Scripts\SuperSwitchRight.cs" />
-    <Compile Include="Assets\Scripts\ToyButton.cs" />
+    <Compile Include="Assets\Scripts\SuperSwitcher.cs" />
     <Compile Include="Assets\Scripts\ToySwitcher.cs" />
+    <Compile Include="Assets\TurnOffOthers.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Roadgeek 2005\License for use of Roadgeek Fonts.txt" />
-    <None Include="Assets\Roadgeek 2005\highway sign colors.txt" />
+    <None Include="Assets\Fonts\Roadgeek 2005\License for use of Roadgeek Fonts.txt" />
+    <None Include="Assets\Fonts\Roadgeek 2005\highway sign colors.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

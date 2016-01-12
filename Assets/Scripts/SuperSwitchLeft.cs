@@ -2,24 +2,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class SuperSwitchLeft : MonoBehaviour
-{
+public class SuperSwitchLeft : MonoBehaviour {
 
     public Text text;
+
     public List<GameObject> toys;
     private GameObject toyOn;
     private int toyIndex = 0;
 
-    void Update()
-    {
+    //void Update()
+    //{
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            GameObjectSwitcher();
-        }
-    }
+    //    if (Input.GetMouseButtonDown(0))
+    //    {
+    //        GameObjectSwitcherLeft();
+    //    }
+    //}
 
-    public void GameObjectSwitcher()
+    public void GameObjectSwitcherLeft()
     {
 
         toyIndex--;
@@ -37,6 +37,22 @@ public class SuperSwitchLeft : MonoBehaviour
             }
         }
         text.text = (toys[toyIndex].ToString());
+    }
+
+    public Material[] materials;
+    public GameObject texturedObject;
+    private int materialIndex = 0;
+
+    public void TextureSwitcherLeft()
+    {
+        materialIndex--;
+        if (materialIndex < 0)
+        {
+            materialIndex = materials.Length - 1;
+        }
+        texturedObject.GetComponent<Renderer>().sharedMaterial = materials[materialIndex];
+        text.text = (materials[materialIndex].ToString());
+
     }
 
 }
