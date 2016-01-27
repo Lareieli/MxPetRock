@@ -8,8 +8,13 @@ public class MaterialSwitcher : MonoBehaviour {
     public GameObject texturedObject;
     private int materialIndex = 0;
 
-    public void MaterialSwitcherLeft()
+    
+    public void TextUpdater()
     {
+        text.text = (materials[materialIndex].ToString());
+    }
+
+    public void MaterialSwitcherLeft() {
         materialIndex--;
         if (materialIndex < 0)
         {
@@ -19,8 +24,7 @@ public class MaterialSwitcher : MonoBehaviour {
         text.text = (materials[materialIndex].ToString());
     }
 
-    public void MaterialSwitcherRight()
-    {
+    public void MaterialSwitcherRight() {
         materialIndex++;
         if (materialIndex > materials.Length - 1)
         {

@@ -8,6 +8,11 @@ public class ShapeSwitcher : MonoBehaviour {
     public GameObject meshObject;
     private int shapeIndex = 0;
 
+    public void TextUpdater()
+    {
+        text.text = (meshes[shapeIndex].ToString());
+    }
+
     public void ShapeSwitcherLeft() {
         shapeIndex--;
         if (shapeIndex < 0)
